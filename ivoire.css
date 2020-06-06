@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+     background-color:#570c28 ;
+     
+  }
+  *:target, *:focus{
+    outline: none;
+  }
+  
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol,
+  ul {
+      list-style: none;
+  }
+  blockquote,
+  q {
+      quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  
+  /*TOP NAVBAR START==========================================*/
+  
+  
+  /* YOUR CUSTOM STYLES */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+
+  /* article*/
+  
+  .cta-100 {
+    margin-top: 100px;
+    padding-left: 8%;
+    padding-top: 7%;
+  }
+  .col-md-4{
+      padding-bottom:20px;
+  }
+  
+  .white {
+    color: #fff !important;
+  }
+  .mt{float: left;margin-top: -20px;padding-top: 20px;}
+  .bg-blue-ui {
+    background-color: #708198 !important;
+  }
+  figure img{width:300px;}
+  
+  #blogCarousel {
+    padding-bottom: 100px;
+  }
+  
+  .blog .carousel-indicators {
+    left: 0;
+    top: -50px;
+    height: 50%;
+  }
+  
+  
+  /* The colour of the indicators */
+  
+  .blog .carousel-indicators li {
+    background: #708198;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .blog .carousel-indicators .active {
+    background: #0fc9af;
+  }
+  
+  
+  
+  
+  .item-carousel-blog-block {
+    outline: medium none;
+    padding: 15px;
+  }
+  
+  .item-box-blog {
+    border: 1px solid #dadada;
+    text-align: center;
+    z-index: 4;
+    padding: 20px;
+  }
+  
+  .item-box-blog-image {
+    position: relative;
+  }
+  
+  .item-box-blog-image figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item-box-blog-date {
+    position: absolute;
+    z-index: 5;
+    padding: 4px 20px;
+    top: -20px;
+    right: 8px;
+    background-color: #41cb52;
+  }
+  
+  .item-box-blog-date span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .item-box-blog-date span.mon {
+    font-size: 18px;
+  }
+  
+  .item-box-blog-date span.day {
+    font-size: 16px;
+  }
+  
+  .item-box-blog-body {
+    padding: 10px;
+  }
+  
+  .item-heading-blog a h5 {
+    margin: 0;
+    line-height: 1;
+    text-decoration:none;
+    transition: color 0.3s;
+  }
+  
+  .item-box-blog-heading a {
+      text-decoration: none;
+      color: yellow;
+  }
+  
+  .item-box-blog-data p {
+    font-size: 13px;
+  }
+  
+  .item-box-blog-data p i {
+    font-size: 12px;
+  }
+  
+  .item-box-blog-text {
+    max-height: 100px;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .mt-10 {
+    float: left;
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+  
+  .btn.bg-blue-ui.white.read {
+    cursor: pointer;
+    padding: 4px 20px;
+    float: left;
+    margin-top: 10px;
+  }
+  
+  .btn.bg-blue-ui.white.read:hover {
+    box-shadow: 0px 5px 15px inset #4d5f77;
+  }
+  /* footer*/
+  
+  
+  .footer1{
+   background-color: black;
+   color: white;
+  
+  }
+  .footer1 h2{
+      margin: 5px;
+      padding: 8px;
+      font-size: 25px;
+      font-family: "Times New Roman", Times, serif;
+  
+  }
+  .footer1 a{
+      color: white;
+  }
+  .footer1 a:hover{
+      color: ;
+  }
+  
+  .footer1 p{
+      margin: 5px;
+      padding-top: 2px;
+      padding-left: 10px;
+      font-size: 18px;
+      font-family: "Times New Roman", Times, serif;
+  
+  }
+  .footer1 h2{margin: 5px;
+      padding: 5px;
+      border-bottom: 1px solid white;
+  
+  
+  }
+  /*==========================footer2===========================*/
+  .footer2{
+  
+      background-color: #e6e6e6;
+      color: black;
+  
+  }
+  .footer2 p{
+      margin: 8px;
+      padding: 8px;
+      font-size: 16px;
+      font-family: "Times New Roman", Times, serif;
+  
+  }
+  .myframegmap{
+  
+      border: 3px solid #f6f5f0;
+      border-radius: 8px;
+      height: 130px;
+      width: 80%;
+      box-shadow: 0px 0px 3px 3px #e7e4dc;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+  
+  }
+   /* Button*/
+   .NN a{
+     display:inline-block ;
+     background-color:#570c28;
+     color:#0000FF;
+     text-decoration: none;
+     border:10px solide #008800;
+     border-radius: 20px;
+     padding: 8px 40px;
+    float: right;
+    margin-right:500px;
+    margin-top: -50px;
+    height: 60px;
+    }
+    .NN a:hover{
+      color:#ffffff;
+      background-color:yellow;
+    }
+  /*site et evenement*/
+  .tou{
+    background-color:rgba(7, 112, 173, 0.856) ;
+    color: #570c28;
+    height: 150px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius:50px ;
+  }
+  .site{
+    background-color:rgba(7, 112, 173, 0.856) ;
+    color: #570c28;
+    height: 80px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius:50px ;
+  }
+  .ther{
+
+    background-color: #4d5f77;
+    border-radius:10px ;
+    height:50px;
+      }
